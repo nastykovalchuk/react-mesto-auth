@@ -1,0 +1,12 @@
+@media (max-width: 1023px) {
+  .page__main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 347px) {
+  .page__main {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
