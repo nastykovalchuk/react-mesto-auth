@@ -36,7 +36,6 @@ function EditProfilePopup({
       onSubmit={handleSubmit}
       buttonText={onLoading ? "Сохранение" : "Сохранить"}
     >
-      <>
         <label>
           <input
             className="popup__input"
@@ -67,7 +66,6 @@ function EditProfilePopup({
           />
           <span className="popup__input-error aboutMe-input-error"> </span>
         </label>
-      </>
     </PopupWithForm>
   );
 }

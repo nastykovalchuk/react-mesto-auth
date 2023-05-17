@@ -28,7 +28,6 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, onLoading }) {
       onSubmit={handleSubmit}
       buttonText={onLoading ? `Сохранение` : `Создать`}
     >
-      <>
         <label>
           <input
             className="popup__input"
@@ -55,7 +54,6 @@ function AddPlacePopup({ isOpen, onClose, onAddPlace, onLoading }) {
           />
           <span className="popup__input-error link-input-error"></span>
         </label>
-      </>
     </PopupWithForm>
   );
 }
