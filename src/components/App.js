@@ -140,7 +140,7 @@ function App() {
         if (data.token) {
           setIsLoggedIn(true);
           localStorage.setItem("jwt", data.token);
-          <Navigate to="/" replace />;
+          navigate("/", { replace: true }); 
         }
       })
       .catch((err) => {
@@ -153,7 +153,7 @@ function App() {
   function handleLogout() {
     localStorage.removeItem("jwt");
     setIsLoggedIn(false);
-    <Navigate to="/login" replace />;
+    navigate("/", { replace: true }); 
   }
 
   useEffect(() => {
@@ -176,7 +176,7 @@ function App() {
           if (data) {
             setIsLoggedIn(true);
             setUserEmail(data.data.email);
-            <Navigate to="/" replace />;
+            navigate("/", { replace: true }); 
           }
         })
         .catch((err) => console.log(err));
